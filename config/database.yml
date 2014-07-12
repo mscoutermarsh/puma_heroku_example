@@ -78,8 +78,3 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: puma_heroku_example_production
-  username: puma_heroku_example
-  password: <%= ENV['PUMA_HEROKU_EXAMPLE_DATABASE_PASSWORD'] %>
