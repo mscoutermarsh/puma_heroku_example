@@ -5,8 +5,8 @@ preload_app!
 
 rackup      DefaultRackup
 
-port = ENV['PORT'] || 3000
-backlog = ENV['PUMA_BACKLOG'] || 20
+port = Integer(ENV['PORT'] || 3000)
+backlog = Integer(ENV['PUMA_BACKLOG'] || 20)
 
 bind "tcp://0.0.0.0:#{port}?backlog=#{backlog}"
 
