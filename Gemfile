@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.1.0', engine: 'rbx', engine_version: '2.2.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
@@ -27,8 +27,3 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'puma', '~> 2.8.2'
-
-group :development, :test do
-  gem 'pry-rails'
-  gem 'pry-debugger'
-end
